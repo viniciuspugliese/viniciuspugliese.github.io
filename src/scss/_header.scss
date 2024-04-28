@@ -1,0 +1,39 @@
+.header {
+    padding: 50px 0;
+    margin-bottom: 205px;
+
+    .logo {
+        .logo--img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo--text {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-size: 30px;
+        }
+    }
+
+    .config {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: $white;
+        border: none;
+        padding: 15px;
+        box-shadow: $box-shadow;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+
+        .config--ico {
+            font-size: 24px;
+            margin: -3px;
+        }
+    }
+}

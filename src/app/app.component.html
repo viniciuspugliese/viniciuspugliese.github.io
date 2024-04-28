@@ -1,0 +1,29 @@
+<app-header/>
+
+<main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <app-perfil/>
+            </div>
+
+            <div class="col-lg-8">
+                <app-nav/>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <section class="content">
+                                    <router-outlet/>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<app-footer/>

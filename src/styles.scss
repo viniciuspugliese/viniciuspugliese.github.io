@@ -1,0 +1,16 @@
+$first: #e633b6;
+$second: #ffd48b;
+$third: #a8a7f2;
+
+$primary: #e633b6;
+$secondary: #f3f6f6;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap');
+@import 'bootstrap/scss/bootstrap';
+
+@import "scss/index";

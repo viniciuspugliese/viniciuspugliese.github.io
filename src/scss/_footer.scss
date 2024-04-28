@@ -1,0 +1,10 @@
+.footer {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    margin-top: 50px;
+    box-shadow: $box-shadow-sm;
+
+    .created-by--text {
+        margin: 0;
+    }
+}

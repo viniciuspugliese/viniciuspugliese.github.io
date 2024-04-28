@@ -1,0 +1,90 @@
+.perfil {
+    .perfil-photo {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        margin: -180px auto 0 auto;
+
+        .perfil-photo--img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .perfil-occupation {
+        margin-top: 20px;
+
+        .perfil-occupation-badge {
+            font-size: 16px;
+            background: $secondary;
+            color: $black;
+            font-weight: 400;
+            padding: 10px 20px;
+        }
+    }
+
+    .perfil-social-media {
+        margin-top: 20px;
+
+        .perfil-social-media-btn {
+            padding: 10px 15px;
+            background: $secondary;
+            border: none;
+            border-radius: 10px !important;
+
+            &:hover {
+                background: $third;
+                color: $white;
+            }
+
+            .perfil-social-media-btn--ico {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .perfil-info {
+        margin-top: 35px;
+        background: $secondary;
+
+        .perfil-info-item {
+            padding: 10px 0;
+            display: flex;
+
+            &:not(:first-child) {
+                border-top: 1px solid #e3e3e3;
+            }
+
+            .perfil-info-item-ico {
+                min-width: 50px;
+                max-width: 50px;
+                text-align: center;
+                padding: 10px 15px;
+                margin: 5px 20px 5px 5px;
+                background: $white;
+                border: none;
+                border-radius: 10px !important;
+                box-shadow: $box-shadow-sm;
+                cursor: auto;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .perfil-cv {
+        margin-top: 40px;
+        text-align: center;
+
+        .perfil-cv-btn {
+            padding: 15px 35px;
+            color: $white;
+            border-radius: 30px;
+            font-size: 20px;
+
+            .perfil-cv-btn--ico {
+                margin-right: 15px;
+            }
+        }
+    }
+}

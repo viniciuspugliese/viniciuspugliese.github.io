@@ -1,0 +1,26 @@
+.nav {
+    .nav-group {
+        .nav-btn {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background: $secondary;
+            border: none;
+            border-radius: 20px !important;
+
+            &.nav-btn--active, &:hover {
+                background: $primary;
+                color: $white;
+            }
+
+            .nav-btn--ico {
+                font-size: 25px;
+            }
+
+            .nav-btn--text {
+                padding-top: 3px;
+                font-size: 16px;
+            }
+        }
+    }
+}
