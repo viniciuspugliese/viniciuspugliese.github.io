@@ -1,0 +1,55 @@
+.page-theme-light {
+    .bg-page {
+        background-image: url('../assets/images/background-page--light.jpg');
+    }
+
+    .theme-bg-1 {
+        background: $theme-bg-light-1;
+    }
+
+    .theme-bg-2 {
+        background: $theme-bg-light-2;
+    }
+
+    .theme-color-1 {
+        color: $theme-color-light-1;
+    }
+
+    .theme-color-2 {
+        color: $theme-color-light-2;
+    }
+}
+
+.page-theme-dark {
+    .bg-page {
+        background-image: url('../assets/images/background-page--dark.jpg');
+    }
+
+    .theme-bg-1 {
+        background: $theme-bg-dark-1;
+    }
+
+    .theme-bg-2 {
+        background: $theme-bg-dark-2;
+    }
+
+    .theme-color-1 {
+        color: $theme-color-dark-1;
+    }
+
+    .theme-color-2 {
+        color: $theme-color-dark-2;
+    }
+}
+
+.bg-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    //background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}

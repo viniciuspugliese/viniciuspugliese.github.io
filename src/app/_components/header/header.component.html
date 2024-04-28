@@ -1,4 +1,4 @@
-<div class="bg-page bg-page--light"></div>
+<div class="bg-page"></div>
 
 <header class="header">
     <div class="container">
@@ -6,14 +6,18 @@
             <div class="col-6">
                 <div class="logo d-flex align-items-center">
                     <img class="logo--img" ngSrc="assets/images/logo-transparent.png" alt="Logo" height="650" width="650">
-                    <h3 class="logo--text">Vinicius Pugliese</h3>
+                    <h3 class="logo--text theme-color-1">Vinicius Pugliese</h3>
                 </div>
             </div>
 
             <div class="col-6">
                 <div class="text-end">
-                    <a class="config btn btn-primary">
-                        <i class="config--ico fa-sharp fa-regular fa-moon"></i>
+                    <a (click)="changeTheme()" class="config theme-bg-2 theme-color-1 btn">
+                        @if (theme === 'light') {
+                            <i class="config--ico fa-regular fa-moon"></i>
+                        } @else {
+                            <i class="config--ico fa-regular fa-sun"></i>
+                        }
                     </a>
                 </div>
             </div>

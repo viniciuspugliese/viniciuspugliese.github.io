@@ -1,29 +1,31 @@
-<app-header/>
+<div [className]="'page-theme-' + theme">
+    <app-header/>
 
-<main class="main">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <app-perfil/>
-            </div>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <app-perfil/>
+                </div>
 
-            <div class="col-lg-8">
-                <app-nav/>
+                <div class="col-lg-8">
+                    <app-nav/>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <section class="content">
-                                    <router-outlet/>
-                                </section>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card theme-bg-1 theme-color-1">
+                                <div class="card-body">
+                                    <section class="content">
+                                        <router-outlet/>
+                                    </section>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<app-footer/>
+    <app-footer/>
+</div>

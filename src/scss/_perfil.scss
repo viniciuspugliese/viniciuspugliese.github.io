@@ -17,8 +17,6 @@
 
         .perfil-occupation-badge {
             font-size: 16px;
-            background: $secondary;
-            color: $black;
             font-weight: 400;
             padding: 10px 20px;
         }
@@ -29,8 +27,6 @@
 
         .perfil-social-media-btn {
             padding: 10px 15px;
-            background: $secondary;
-            border: none;
             border-radius: 10px !important;
 
             &:hover {
@@ -46,7 +42,6 @@
 
     .perfil-info {
         margin-top: 35px;
-        background: $secondary;
 
         .perfil-info-item {
             padding: 10px 0;
@@ -56,13 +51,16 @@
                 border-top: 1px solid #e3e3e3;
             }
 
+            .perfil-info-label {
+                color: rgba(0, 0, 0, 0.5);
+            }
+
             .perfil-info-item-ico {
                 min-width: 50px;
                 max-width: 50px;
                 text-align: center;
                 padding: 10px 15px;
                 margin: 5px 20px 5px 5px;
-                background: $white;
                 border: none;
                 border-radius: 10px !important;
                 box-shadow: $box-shadow-sm;
