@@ -3,7 +3,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import {HeaderComponent} from "./_components/header/header.component";
 import {FooterComponent} from "./_components/footer/footer.component";
-import {PerfilComponent} from "./_components/perfil/perfil.component";
+import {ProfileComponent} from "./_components/profile/profile.component";
 import {NavComponent} from "./_components/nav/nav.component";
 import {ThemeService} from "./shared/services/theme.service";
 
@@ -17,7 +17,7 @@ import {ThemeService} from "./shared/services/theme.service";
         RouterLinkActive,
         HeaderComponent,
         FooterComponent,
-        PerfilComponent,
+        ProfileComponent,
         NavComponent
     ],
     templateUrl: './app.component.html'

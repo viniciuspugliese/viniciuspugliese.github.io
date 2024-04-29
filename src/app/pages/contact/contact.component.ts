@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
+import {Title} from "@angular/platform-browser";
 
 @Component({
     selector: 'app-contact',
@@ -6,5 +7,11 @@ import {Component} from '@angular/core';
     imports: [],
     templateUrl: './contact.component.html'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+    private title: Title = inject(Title);
+
+    public ngOnInit(): void {
+        this.title.setTitle('Contact');
+    }
 }

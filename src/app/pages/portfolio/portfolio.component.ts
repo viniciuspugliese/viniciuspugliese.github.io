@@ -2,16 +2,16 @@ import {Component, inject, OnInit} from '@angular/core';
 import {Title} from "@angular/platform-browser";
 
 @Component({
-    selector: 'app-about',
+    selector: 'app-portfolio',
     standalone: true,
     imports: [],
-    templateUrl: './about.component.html'
+    templateUrl: './portfolio.component.html'
 })
-export class AboutComponent implements OnInit {
+export class PortfolioComponent implements OnInit {
 
     private title: Title = inject(Title);
 
     public ngOnInit(): void {
-        this.title.setTitle('About');
+        this.title.setTitle('Portfolio');
     }
 }

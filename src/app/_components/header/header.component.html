@@ -12,12 +12,16 @@
 
             <div class="col-6">
                 <div class="text-end">
-                    <a (click)="changeTheme()" class="config theme-bg-2 theme-color-1 btn">
+                    <a (click)="changeTheme()" class="config theme-bg-2 theme-color-1 btn btn-primary">
                         @if (theme === 'light') {
                             <i class="config--ico fa-regular fa-moon"></i>
                         } @else {
                             <i class="config--ico fa-regular fa-sun"></i>
                         }
+                    </a>
+
+                    <a class="btn config theme-bg-2 theme-color-1 btn btn-primary ms-2">
+                        <i class="config--ico fa-solid fa-bars"></i>
                     </a>
                 </div>
             </div>

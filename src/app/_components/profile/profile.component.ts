@@ -3,15 +3,18 @@ import {NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
-    selector: 'app-perfil',
+    selector: 'app-profile',
     standalone: true,
     imports: [
         NgOptimizedImage,
         RouterLink,
         RouterLinkActive
     ],
-    templateUrl: './perfil.component.html'
+    templateUrl: './profile.component.html'
 })
-export class PerfilComponent {
+export class ProfileComponent {
 
+    public downloadCV(): void {
+
+    }
 }

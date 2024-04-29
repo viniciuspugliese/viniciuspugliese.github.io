@@ -29,3 +29,7 @@
         color: $gray-600;
     }
 }
+
+@include media-breakpoint-down(sm)  {
+    padding: 0;
+}

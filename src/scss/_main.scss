@@ -8,3 +8,11 @@
         }
     }
 }
+
+@include media-breakpoint-down(sm) {
+    .card {
+        .card-body {
+            padding: 20px;
+        }
+    }
+}
