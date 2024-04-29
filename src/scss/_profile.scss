@@ -1,31 +1,32 @@
-.perfil {
-    .perfil-photo {
+.profile {
+    .profile-photo {
         position: relative;
         width: 240px;
         height: 240px;
-        margin: -180px auto 0 auto;
+        margin: -120px auto 0 auto;
+        border-radius: 20px;
+        clip-path: border-box;
 
-        .perfil-photo--img {
+        .profile-photo--img {
             width: 100%;
             height: 100%;
-            border-radius: 20px;
         }
     }
 
-    .perfil-occupation {
+    .profile-occupation {
         margin-top: 20px;
 
-        .perfil-occupation-badge {
+        .profile-occupation-badge {
             font-size: 16px;
             font-weight: 400;
-            padding: 10px 20px;
+            padding: 10px 10px;
         }
     }
 
-    .perfil-social-media {
+    .profile-social-media {
         margin-top: 20px;
 
-        .perfil-social-media-btn {
+        .profile-social-media-btn {
             padding: 10px 15px;
             border-radius: 10px !important;
 
@@ -34,20 +35,20 @@
                 color: $white;
             }
 
-            .perfil-social-media-btn--ico {
+            .profile-social-media-btn--ico {
                 font-size: 18px;
             }
         }
     }
 
-    .perfil-info {
+    .profile-info {
         margin-top: 35px;
 
         .card-body {
-            padding: 40px 20px;
+            padding: 40px 10px;
         }
 
-        .perfil-info-item {
+        .profile-info-item {
             padding: 10px 0;
             display: flex;
 
@@ -55,16 +56,12 @@
                 border-top: 1px solid #e3e3e3;
             }
 
-            .perfil-info-label {
-                color: rgba(0, 0, 0, 0.5);
-            }
-
-            .perfil-info-item-ico {
-                min-width: 50px;
-                max-width: 50px;
+            .profile-info-item-ico {
+                min-width: 40px;
+                max-width: 40px;
                 text-align: center;
-                padding: 10px 15px;
-                margin: 5px 20px 5px 5px;
+                padding: 10px 10px;
+                margin: 5px 10px 5px 5px;
                 border: none;
                 border-radius: 10px !important;
                 box-shadow: $box-shadow-sm;
@@ -73,20 +70,21 @@
             }
         }
     }
+}
 
-    .perfil-cv {
-        margin-top: 40px;
-        text-align: center;
 
-        .perfil-cv-btn {
-            padding: 15px 35px;
-            color: $white;
-            border-radius: 30px;
-            font-size: 20px;
+.profile-cv {
+    margin-top: 40px;
+    text-align: center;
 
-            .perfil-cv-btn--ico {
-                margin-right: 15px;
-            }
+    .profile-cv-btn {
+        padding: 15px 35px;
+        color: $white;
+        border-radius: 30px;
+        font-size: 20px;
+
+        .profile-cv-btn--ico {
+            margin-right: 15px;
         }
     }
 }

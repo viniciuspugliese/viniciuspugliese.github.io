@@ -2,17 +2,15 @@
     .card {
         border-radius: 20px;
         border: none;
+        box-shadow: $box-shadow-sm;
 
-        .card-body {
-            padding: 40px 30px;
+        &.card-content {
+            clip-path: border-box;
+            min-height: 630px;
         }
     }
 }
 
-@include media-breakpoint-down(sm) {
-    .card {
-        .card-body {
-            padding: 20px;
-        }
-    }
+.cursor-pointer {
+    cursor: pointer;
 }

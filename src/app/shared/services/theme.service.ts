@@ -8,14 +8,11 @@ export class ThemeService {
 
     private theme: BehaviorSubject<'light' | 'dark'> = new BehaviorSubject('light');
 
-    constructor() {
-    }
-
-    getTheme(): Observable<'light' | 'dark'> {
+    public getTheme(): Observable<'light' | 'dark'> {
         return this.theme.asObservable();
     }
 
-    public changeTheme(): void {
+    public toggleTheme(): void {
         if (this.theme.value === 'light') {
             this.theme.next('dark');
         } else {

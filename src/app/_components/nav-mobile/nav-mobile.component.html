@@ -1,43 +1,46 @@
-<div class="mobile-menu-wrap">
-    <div class="mobile-menu mobile_menu mean-container active">
-        <div class="mean-bar">
-            <a class="meanmenu-reveal">
-                <span><span><span></span></span></span>
-            </a>
-
-            <nav class="mean-nav">
-                <ul class="nav cs_nav_list fw-medium text-uppercase">
-                    <a routerLink="/" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="nav-btn--active"
-                       class="nav-btn theme-bg-2 theme-color-1 btn mx-2">
+<div [hidden]="! showMobileNav" class="position-relative">
+    <nav class="nav-mobile card theme-bg-2 theme-color-1">
+        <div class="card-body">
+            <div class="nav-group">
+                <a (click)="toggleShowMobileNav()" routerLink="/" [routerLinkActiveOptions]="{exact: true}"
+                   routerLinkActive="nav-btn--active"
+                   class="nav-btn theme-bg-2 theme-color-1 btn">
                         <i class="nav-btn--ico far fa-address-card"></i>
                         <span class="nav-btn--text">About</span>
                     </a>
+            </div>
 
-                    <a routerLink="/resume" routerLinkActive="nav-btn--active"
-                       class="nav-btn theme-bg-2 theme-color-1 btn mx-2">
-                        <i class="nav-btn--ico fa-regular fa-file-lines"></i>
-                        <span class="nav-btn--text">Resume</span>
-                    </a>
+            <div class="nav-group">
+                <a (click)="toggleShowMobileNav()" routerLink="/resume" routerLinkActive="nav-btn--active"
+                   class="nav-btn theme-bg-2 theme-color-1 btn">
+                    <i class="nav-btn--ico fa-regular fa-file-lines"></i>
+                    <span class="nav-btn--text">Resume</span>
+                </a>
+            </div>
 
-                    <a routerLink="/works" routerLinkActive="nav-btn--active"
-                       class="nav-btn theme-bg-2 theme-color-1 btn mx-2">
-                        <i class="nav-btn--ico fa-solid fa-briefcase"></i>
-                        <span class="nav-btn--text">Works</span>
-                    </a>
+            <div class="nav-group">
+                <a (click)="toggleShowMobileNav()" routerLink="/works" routerLinkActive="nav-btn--active"
+                   class="nav-btn theme-bg-2 theme-color-1 btn">
+                    <i class="nav-btn--ico fa-solid fa-briefcase"></i>
+                    <span class="nav-btn--text">Works</span>
+                </a>
+            </div>
 
-                    <a routerLink="/blogs" routerLinkActive="nav-btn--active"
-                       class="nav-btn theme-bg-2 theme-color-1 btn mx-2">
-                        <i class="nav-btn--ico fa-regular fa-newspaper"></i>
-                        <span class="nav-btn--text">Blogs</span>
-                    </a>
+            <div class="nav-group">
+                <a (click)="toggleShowMobileNav()" routerLink="/blogs" routerLinkActive="nav-btn--active"
+                   class="nav-btn theme-bg-2 theme-color-1 btn">
+                    <i class="nav-btn--ico fa-regular fa-newspaper"></i>
+                    <span class="nav-btn--text">Blogs</span>
+                </a>
+            </div>
 
-                    <a routerLink="/contact" routerLinkActive="nav-btn--active"
-                       class="nav-btn theme-bg-2 theme-color-1 btn mx-2">
-                        <i class="nav-btn--ico fa-solid fa-address-book"></i>
-                        <span class="nav-btn--text">Contact</span>
-                    </a>
-                </ul>
-            </nav>
+            <div class="nav-group">
+                <a (click)="toggleShowMobileNav()" routerLink="/contact" routerLinkActive="nav-btn--active"
+                   class="nav-btn theme-bg-2 theme-color-1 btn">
+                    <i class="nav-btn--ico fa-solid fa-address-book"></i>
+                    <span class="nav-btn--text">Contact</span>
+                </a>
+            </div>
         </div>
-    </div>
+    </nav>
 </div>

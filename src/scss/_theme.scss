@@ -53,3 +53,18 @@
     background-repeat: no-repeat;
     z-index: -1;
 }
+
+.bg-theme-first {
+    background: $first;
+    color: $white;
+}
+
+.bg-theme-second {
+    background: $second;
+    color: $white;
+}
+
+.bg-theme-third {
+    background: $third;
+    color: $white;
+}

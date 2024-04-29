@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {SocialMediaService} from "../../shared/services/social-media.service";
 
 @Component({
     selector: 'app-profile',
@@ -13,6 +14,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     templateUrl: './profile.component.html'
 })
 export class ProfileComponent {
+
+    public socialMediaService: SocialMediaService = inject(SocialMediaService);
 
     public downloadCV(): void {
 

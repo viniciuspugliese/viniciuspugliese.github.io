@@ -1,47 +1,47 @@
 <div class="card theme-bg-1 theme-color-1">
     <div class="card-body">
-        <section class="perfil">
-            <div class="perfil-photo">
-                <img class="perfil-photo--img" ngSrc="assets/images/perfil-photo.jpg" alt="Perfil" fill priority>
+        <section class="profile">
+            <div class="profile-photo">
+                <img class="profile-photo--img" ngSrc="assets/images/profile-photo.jpg" alt="profile" fill priority>
             </div>
 
             <div class="mt-4 text-center">
-                <div class="perfil-name">
+                <div class="profile-name">
                     <h4>Vinicius Pugliese</h4>
                 </div>
 
-                <div class="perfil-occupation">
-                    <span class="perfil-occupation-badge theme-bg-2 theme-color-1 badge">
+                <div class="profile-occupation">
+                    <span class="profile-occupation-badge theme-bg-2 theme-color-1 badge">
                         Senior Software Engineer
                     </span>
                 </div>
 
-                <div class="perfil-social-media">
+                <div class="profile-social-media">
                     <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <a href="https://www.linkedin.com/in/vinicius-pugliese" target="_blank" class="perfil-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
-                            <i class="perfil-social-media-btn--ico fab fa-linkedin-in"></i>
+                        <a (click)="socialMediaService.goTo('linkedin')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                            <i class="profile-social-media-btn--ico fab fa-linkedin-in"></i>
                         </a>
 
-                        <a href="https://github.com/viniciuspugliese" target="_blank" class="perfil-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
-                            <i class="perfil-social-media-btn--ico fab fa-github"></i>
+                        <a (click)="socialMediaService.goTo('github')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                            <i class="profile-social-media-btn--ico fab fa-github"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/vinicius.pugliese" target="_blank" class="perfil-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
-                            <i class="perfil-social-media-btn--ico fab fa-instagram"></i>
+                        <a (click)="socialMediaService.goTo('whatsapp')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                            <i class="profile-social-media-btn--ico fa-solid fa-mobile-screen-button"></i>
                         </a>
 
-                        <a href="https://www.facebook.com/viniciuspugliese.1" target="_blank" class="perfil-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
-                            <i class="perfil-social-media-btn--ico fab fa-facebook"></i>
+                        <a (click)="socialMediaService.goTo('email')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                            <i class="profile-social-media-btn--ico fa-regular fa-envelope"></i>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="perfil-info theme-bg-2 theme-color-1 card">
+            <div class="profile-info theme-bg-2 theme-color-1 card">
                 <div class="card-body">
-                    <div class="perfil-info-item">
+                    <div class="profile-info-item">
                         <div>
-                            <i class="perfil-info-item-ico theme-bg-1 theme-color-1 fa-solid fa-mobile-screen-button"></i>
+                            <i class="profile-info-item-ico theme-bg-1 theme-color-1 fa-solid fa-mobile-screen-button"></i>
                         </div>
                         <div>
                             <div class="theme-color-2">Phone</div>
@@ -49,19 +49,19 @@
                         </div>
                     </div>
 
-                    <div class="perfil-info-item">
+                    <div class="profile-info-item">
                         <div>
-                            <i class="perfil-info-item-ico theme-bg-1 theme-color-1 fa-regular fa-envelope"></i>
+                            <i class="profile-info-item-ico theme-bg-1 theme-color-1 fa-regular fa-envelope"></i>
                         </div>
                         <div>
                             <div class="theme-color-2">Email</div>
-                            <div [innerHTML]="'vinicius.lima.pugliese@gmail.com'"></div>
+                            <div class="text-break" [innerHTML]="'vinicius.lima.pugliese@gmail.com'"></div>
                         </div>
                     </div>
 
-                    <div class="perfil-info-item">
+                    <div class="profile-info-item">
                         <div>
-                            <i class="perfil-info-item-ico theme-bg-1 theme-color-1 fa-solid fa-location-dot"></i>
+                            <i class="profile-info-item-ico theme-bg-1 theme-color-1 fa-solid fa-location-dot"></i>
                         </div>
                         <div>
                             <div class="theme-color-2">Location</div>
@@ -71,9 +71,9 @@
                 </div>
             </div>
 
-            <div class="perfil-cv">
-                <a (click)="downloadCV()" href="#" class="perfil-cv-btn btn btn-primary">
-                    <i class="perfil-cv-btn--ico fas fa-download"></i>
+            <div class="profile-cv mb-4">
+                <a (click)="downloadCV()" href="#" class="profile-cv-btn btn btn-primary">
+                    <i class="profile-cv-btn--ico fas fa-download"></i>
                     <span>Download CV</span>
                 </a>
             </div>

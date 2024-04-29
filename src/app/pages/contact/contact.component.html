@@ -1,14 +1,80 @@
-<div>
-    <h1 class="title">Contact</h1>
+<div class="card-body">
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <h1 class="title">Contact</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>Did you enjoy my work? How about contact me?</p>
+                <p>Call or text me with any social medias below.</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quis, voluptatibus. Ad cum dolorum eius iusto
-        mollitia nemo odit, possimus repellendus sed similique, sunt suscipit tenetur unde ut veritatis voluptatum.
-    </p>
+<div class="theme-bg-2">
+    <div class="card-body">
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <div (click)="socialMediaService.goTo('linkedin')" class="bg-theme-first text-center p-2 rounded-3 cursor-pointer"
+                         style="max-width: 100px" title="Linkedin">
+                        <i style="font-size: 45px" class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div (click)="socialMediaService.goTo('github')" class="bg-theme-second text-center p-2 rounded-3 cursor-pointer"
+                         style="max-width: 100px" title="Github">
+                        <i style="font-size: 45px" class="fab fa-github"></i>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div (click)="socialMediaService.goTo('email')" class="bg-theme-first text-center p-2 rounded-3 cursor-pointer"
+                         style="max-width: 100px" title="Email">
+                        <i style="font-size: 45px" class="fa-regular fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div (click)="socialMediaService.goTo('whatsapp')" class="bg-theme-second text-center p-2 rounded-3 cursor-pointer"
+                         style="max-width: 100px" title="Whatsapp">
+                        <i style="font-size: 45px" class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="mt-5">
-    <h2 class="subtitle">What I do!</h2>
+<div class="card-body">
+    <div class="content">
+        <div class="row">
+            <div class="col">
+                <h4 class="subtitle mt-3">Did you already text me?</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p>Great! As soon as possible I'll answer you.</p>
+                <p>In the meantime, how about download my CV for further details?</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="profile-cv mb-4">
+                    <a (click)="downloadCV()" class="profile-cv-btn btn btn-primary">
+                        <i class="profile-cv-btn--ico fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

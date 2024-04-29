@@ -20,11 +20,13 @@
                         }
                     </a>
 
-                    <a class="btn config theme-bg-2 theme-color-1 btn btn-primary ms-2">
+                    <a (click)="toggleShowMobileNav()" class="btn config theme-bg-2 theme-color-1 btn btn-primary ms-2 d-sm-none">
                         <i class="config--ico fa-solid fa-bars"></i>
                     </a>
                 </div>
             </div>
         </div>
+
+        <app-nav-mobile/>
     </div>
 </header>
