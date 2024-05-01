@@ -33,6 +33,8 @@
             &:hover {
                 background: $third;
                 color: $white;
+                animation: pulse;
+                animation-duration: 2s;
             }
 
             .profile-social-media-btn--ico {
@@ -70,6 +72,24 @@
             }
         }
     }
+}
+
+.isMobile {
+    .grid-profile {
+        display: none;
+    }
+
+    &:not(.isAboutRoute) {
+        .profile {
+            .profile-photo {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.isMobile.isAboutRoute .grid-profile {
+    display: block;
 }
 
 

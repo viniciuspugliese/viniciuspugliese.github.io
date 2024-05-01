@@ -1,10 +1,10 @@
-<div [className]="'page-theme-' + theme">
+<div [className]="'page-theme-' + theme" [ngClass]="{isMobile: isMobile, isAboutRoute: isAboutRoute}">
     <app-header/>
 
     <main class="main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-4 mb-4 grid-profile">
                     <app-profile/>
                 </div>
 

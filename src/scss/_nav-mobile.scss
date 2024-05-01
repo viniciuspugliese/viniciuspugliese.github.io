@@ -3,6 +3,8 @@
     z-index: 1;
     width: 100%;
     box-shadow: $box-shadow-lg;
+    animation: fadeInDown;
+    animation-duration: 1s;
 
     .nav-group {
         .nav-btn {

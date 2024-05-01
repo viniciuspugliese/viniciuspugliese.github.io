@@ -3,6 +3,7 @@ import {NgOptimizedImage} from "@angular/common";
 import {ThemeService} from "../../shared/services/theme.service";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {MobileNavService} from "../../shared/services/mobile-nav.service";
+import {Router} from "@angular/router";
 
 @Component({
     selector: 'app-header',
@@ -15,8 +16,9 @@ import {MobileNavService} from "../../shared/services/mobile-nav.service";
 })
 export class HeaderComponent implements OnInit {
 
-    private themeService: ThemeService = inject(ThemeService);
+    private router: Router = inject(Router);
     private mobileNavService: MobileNavService = inject(MobileNavService);
+    private themeService: ThemeService = inject(ThemeService);
 
     public theme: string;
 
@@ -30,5 +32,9 @@ export class HeaderComponent implements OnInit {
 
     public changeTheme() {
         this.themeService.toggleTheme();
+    }
+
+    public goTo(to: string): void {
+        this.router.navigate([to]);
     }
 }

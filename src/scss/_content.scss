@@ -18,6 +18,9 @@
             transform: translatey(-50%);
             border-radius: 5px;
             margin-bottom: 30px;
+
+            animation: bounceInRight;
+            animation-duration: 2s;
         }
     }
 

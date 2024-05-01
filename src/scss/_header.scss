@@ -36,3 +36,11 @@
         }
     }
 }
+
+.isMobile {
+    &:not(.isAboutRoute) {
+        .header {
+            margin-bottom: 0;
+        }
+    }
+}

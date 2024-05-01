@@ -2,6 +2,7 @@ import {Component, inject} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {SocialMediaService} from "../../shared/services/social-media.service";
+import {TooltipModule} from "ngx-bootstrap/tooltip";
 
 @Component({
     selector: 'app-profile',
@@ -9,7 +10,8 @@ import {SocialMediaService} from "../../shared/services/social-media.service";
     imports: [
         NgOptimizedImage,
         RouterLink,
-        RouterLinkActive
+        RouterLinkActive,
+        TooltipModule,
     ],
     templateUrl: './profile.component.html'
 })

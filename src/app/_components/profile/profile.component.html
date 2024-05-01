@@ -11,26 +11,30 @@
                 </div>
 
                 <div class="profile-occupation">
-                    <span class="profile-occupation-badge theme-bg-2 theme-color-1 badge">
-                        Senior Software Engineer
-                    </span>
+                        <span class="profile-occupation-badge theme-bg-2 theme-color-1 badge">
+                            Senior Software Engineer
+                        </span>
                 </div>
 
                 <div class="profile-social-media">
                     <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <a (click)="socialMediaService.goTo('linkedin')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                        <a (click)="socialMediaService.goTo('linkedin')" tooltip="LinkedIn"
+                           class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
                             <i class="profile-social-media-btn--ico fab fa-linkedin-in"></i>
                         </a>
 
-                        <a (click)="socialMediaService.goTo('github')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                        <a (click)="socialMediaService.goTo('github')" tooltip="Github"
+                           class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
                             <i class="profile-social-media-btn--ico fab fa-github"></i>
                         </a>
 
-                        <a (click)="socialMediaService.goTo('whatsapp')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                        <a (click)="socialMediaService.goTo('whatsapp')" tooltip="Whatsapp"
+                           class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
                             <i class="profile-social-media-btn--ico fa-solid fa-mobile-screen-button"></i>
                         </a>
 
-                        <a (click)="socialMediaService.goTo('email')" class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
+                        <a (click)="socialMediaService.goTo('email')" tooltip="Email"
+                           class="profile-social-media-btn theme-bg-2 theme-color-1 btn mx-2">
                             <i class="profile-social-media-btn--ico fa-regular fa-envelope"></i>
                         </a>
                     </div>

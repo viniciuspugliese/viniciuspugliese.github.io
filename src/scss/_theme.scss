@@ -1,43 +1,53 @@
 .page-theme-light {
     .bg-page {
+        transition: background 1.5s;
         background-image: url('../assets/images/background-page--light.jpg');
     }
 
     .theme-bg-1 {
+        transition: background 1s;
         background: $theme-bg-light-1;
     }
 
     .theme-bg-2 {
+        transition: background 1s;
         background: $theme-bg-light-2;
     }
 
     .theme-color-1 {
+        transition: background 1s;
         color: $theme-color-light-1;
     }
 
     .theme-color-2 {
+        transition: background 1s;
         color: $theme-color-light-2;
     }
 }
 
 .page-theme-dark {
     .bg-page {
+        transition: background 1.5s;
         background-image: url('../assets/images/background-page--dark.jpg');
     }
 
     .theme-bg-1 {
+        transition: background 1s;
         background: $theme-bg-dark-1;
     }
 
     .theme-bg-2 {
+        transition: background 1s;
         background: $theme-bg-dark-2;
     }
 
     .theme-color-1 {
+        transition: background 1s;
         color: $theme-color-dark-1;
     }
 
     .theme-color-2 {
+        transition: background 1s;
         color: $theme-color-dark-2;
     }
 }
@@ -55,16 +65,19 @@
 }
 
 .bg-theme-first {
+    transition: background 1s;
     background: $first;
     color: $white;
 }
 
 .bg-theme-second {
+    transition: background 1s;
     background: $second;
     color: $white;
 }
 
 .bg-theme-third {
+    transition: background 1s;
     background: $third;
     color: $white;
 }
