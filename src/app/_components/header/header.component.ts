@@ -4,6 +4,7 @@ import {ThemeService} from "../../shared/services/theme.service";
 import {NavMobileComponent} from "../nav-mobile/nav-mobile.component";
 import {MobileNavService} from "../../shared/services/mobile-nav.service";
 import {Router} from "@angular/router";
+import {StopEventDirective} from "../../shared/directives/stop-event.directive";
 
 @Component({
     selector: 'app-header',
@@ -11,6 +12,7 @@ import {Router} from "@angular/router";
     imports: [
         NgOptimizedImage,
         NavMobileComponent,
+        StopEventDirective,
     ],
     templateUrl: './header.component.html'
 })

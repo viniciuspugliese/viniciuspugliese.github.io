@@ -12,7 +12,7 @@
 
             <div class="col-6">
                 <div class="text-end">
-                    <a (click)="changeTheme()" class="config theme-bg-2 theme-color-1 btn btn-primary">
+                    <a (click)="changeTheme()" appStopEvent class="config theme-bg-2 theme-color-1 btn btn-primary">
                         @if (theme === 'light') {
                             <i class="config--ico fa-regular fa-moon"></i>
                         } @else {
@@ -20,7 +20,7 @@
                         }
                     </a>
 
-                    <a (click)="toggleShowMobileNav()" class="btn config theme-bg-2 theme-color-1 btn btn-primary ms-2 d-sm-none">
+                    <a (click)="toggleShowMobileNav()" appStopEvent class="btn config theme-bg-2 theme-color-1 btn btn-primary ms-2 d-sm-none">
                         <i class="config--ico fa-solid fa-bars"></i>
                     </a>
                 </div>
