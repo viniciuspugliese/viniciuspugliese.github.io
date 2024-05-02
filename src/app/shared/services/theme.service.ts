@@ -30,7 +30,7 @@ export class ThemeService {
         }
 
         let self = this;
-        prefersColorScheme.addListener(function(event) {
+        prefersColorScheme.addEventListener('change', function(event) {
             if (event.matches) {
                 self.theme.next('dark');
             }
