@@ -1,0 +1,30 @@
+
+.circle-progress {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+    &> svg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-progress-value {
+        stroke-width: 6px;
+        stroke: hsl(100, 100%, 60%);
+        stroke-dasharray: 0.6, 3;
+    }
+
+    .circle-progress-circle {
+        stroke-width: 6px;
+        stroke: #ddd;
+        stroke-dasharray: 0.6, 3;
+        stroke-dashoffset: 1.6;
+    }
+
+    .circle-progress-text {
+        font-family: 'Gotham Rounded Light', serif;
+        fill: hsl(100, 81%, 55%);
+        font-size: 26px;
+    }
+}

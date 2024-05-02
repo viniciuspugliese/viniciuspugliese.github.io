@@ -5,8 +5,10 @@
             justify-content: center;
             flex-direction: column;
             padding: 20px;
+            width: 100px;
             border: none;
             border-radius: 20px !important;
+            transition: none;
 
             &.nav-btn--active, &:hover {
                 background: $primary;
