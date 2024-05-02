@@ -42,6 +42,10 @@ export class SkillsComponent implements OnInit {
         );
 
         this.circleProgressService.init(
+            '#skill-server', {max: 100, value: 80, textFormat: 'percent'}
+        );
+
+        this.circleProgressService.init(
             '#skill-tools', {max: 100, value: 95, textFormat: 'percent'}
         );
     }
